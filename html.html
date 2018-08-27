@@ -1,0 +1,283 @@
+/**********************************/
+          INFO: INICIO
+/**********************************/
+
+<div id="debi" style="width: 100%; margin: 0px;">
+<script type="text/javascript">/*<![CDATA[*/
+// VARIABLES GENERALES
+var month = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"];
+var days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+/*]]>*/</script>
+<div class="cabecera" style="background: url(https://sites.google.com/a/up.edu.pe/blended/mba/1-2-mod/main-bg-01.jpg) no-repeat center top #e0f2fc; background-size: auto 100%; padding: 20px 0px; margin: 0px; color: #014e6a;">
+<table style="width: 90%; margin: 0PX auto; border: 0px solid;">
+<tbody>
+<tr>
+<td width="40%" align="center" valign="middle">
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><img src="https://sites.google.com/a/up.edu.pe/blended/mba/1-2-mod/caratula-docente.jpg" width="100%" height="auto" /></div>
+</td>
+<td width="60%" align="left" valign="middle" style="padding-left: 20px;">
+<p style="font-size: 36px; font-weight: bold; line-height: 0.85; border-bottom: 3px solid #70B7E7; padding-bottom: 5px; margin: 0px;">Actividades Preliminares</p>
+<p style="font-size: 13px; padding-top: 10px; text-align: justify;"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="background: url(https://sites.google.com/a/up.edu.pe/blended/mba/triangulo-celeste.png) no-repeat center top; min-height: 20px;"></div>
+</div>
+
+/**********************************/
+          INFO: CIERRE
+/**********************************/
+
+<div id="debi" style="width: 100%; margin: 0px;">
+<script type="text/javascript">/*<![CDATA[*/
+// INFORMACION
+var Info_titulo = "Actividades de Cierre";
+var Info_imagen = "https://sites.google.com/a/up.edu.pe/blended/mba/1-2-mod/caratula-docente.jpg";
+var Info_video = "";
+var Info_texto = "";
+// BLOQUE: EncuestaSatisfaccion
+var ES_URL      = "https://goo.gl/forms/";
+var ES_Inicio   = new Date("2018-09-19 00:00:00");
+// VARIABLES GENERALES
+var month = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"];
+var days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+/*]]>*/</script>
+<div class="cabecera" style="background: url('https://sites.google.com/a/up.edu.pe/blended/mba/1-2-mod/main-bg-01.jpg') no-repeat center top #e0f2fc; background-size: auto 100%; padding: 20px 0px; margin: 0px; color: #014e6a;">
+<table style="margin: 0px auto; width: 90%;" cellspacing="20" border="0"><tr>
+<td width="40%" align="center" valign="middle">
+	<div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
+	<script type="text/javascript">/*<![CDATA[*/
+	if (Info_video != "") document.write("<iframe width=\"340\" height=\"191\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\" src=\"https://www.youtube.com/embed/"+Info_video.substring(17,Info_video.length)+"?enablejsapi=1&rel=0&showinfo=0&autoplay=0\" frameborder=\"0\" allowfullscreen=\"\"></iframe>");
+	else document.write("<img src=\""+Info_imagen+"\" width=\"100%\" height=\"auto\" />");
+	/*]]>*/</script>
+	</div>
+</td>
+<td width="60%" align="left" valign="middle">
+	<p style="font-size: 36px; font-weight: bold; line-height: 0.85; border-bottom: 3px solid #70B7E7; padding-bottom: 5px; margin: 0px;"><script type="text/javascript">document.write(Info_titulo);</script></p>
+	<p style="font-size: 14px; padding-top: 10px;"><script type="text/javascript">document.write(Info_texto);</script></p>
+</td>
+</tr></table>
+</div>
+<div style="background: url('https://sites.google.com/a/up.edu.pe/blended/mba/triangulo-celeste.png') no-repeat center top; min-height: 20px;"></div>
+</div>
+
+
+
+
+/**********************************/
+          BLOQUE: ENCUESTA
+/**********************************/
+
+<table border="0" style="width: 100%; margin: 0px auto; font-size: 12px;">
+<tbody>
+<tr>
+<td style="text-align: justify; padding: 0px 10px 10px 0px;">
+<p>En esta actividad te presentaremos una serie de enunciados relacionados a tu experiencia de aprendizaje durante el curso. Te agradeceremos nos indiques, con la MAYOR SINCERIDAD, tu GRADO DE SATISFACCIÓN con cada uno de los ítems expresados, marcando la alternativa que mejor exprese tu opinión.</p>
+<div style="width:300px; margin:0px auto;"><div id="EncuestaSatisfaccion"></div></div>
+<script type="text/javascript">/*<![CDATA[*/
+var en = setInterval(function() {
+	var now = new Date().getTime();
+	var ES_tiempo = ES_Inicio - now ;
+ 	if (ES_tiempo > 0) {
+		var ES_days    = Math.floor(ES_tiempo / (1000 * 60 * 60 * 24));
+		var ES_hours   = Math.floor((ES_tiempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var ES_minutes = Math.floor((ES_tiempo % (1000 * 60 * 60)) / (1000 * 60));
+		var ES_seconds = Math.floor((ES_tiempo % (1000 * 60)) / 1000);
+		document.getElementById("EncuestaSatisfaccion").innerHTML = "<p style=\"width:100%; display:block; border:1px solid #2C607D; border-radius:5px; text-align: -webkit-border-radius:3px; text-align:center; color:#2C607D; padding: 3px; margin: 5px auto;\"> <span style=\"font-size: 10px;\">Para iniciar la actividad faltan:</span> <br> <span style=\"font-size: 12px; font-weight: bold;\">"+ ES_days + " días " + ES_hours + " horas " + ES_minutes + " minutos " + ES_seconds + " segundos </span></p>";
+	}
+	else{
+		clearInterval(en);
+		document.getElementById("EncuestaSatisfaccion").innerHTML = "<a href=\""+ES_URL+"\" target=\"_blank\" style=\"width:100%; display:block; border:1px solid #2C607D; border-radius:5px; -webkit-border-radius:3px; text-align:center; text-decoration:none; color:#fff; margin:5px auto; background:#014e6a url(https://sites.google.com/a/up.edu.pe/blended/mba/boton-criterios.png) no-repeat right center; padding: 10px 40px 10px 5px; \">REALIZA LA ENCUESTA DE SATISFACCIÓN</a>";		  	
+	}
+}, 1000);
+/*]]>*/</script>
+</td>
+<td align="center" valign="middle" style="background: #edeef0; min-width: 100px;"><img src="https://sites.google.com/a/up.edu.pe/blended/mba/icono-encuesta.png" /></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+/**********************************/
+          BLOQUE: TAREA
+/**********************************/
+
+<table style="width: 100%; margin: 0px auto;" border="0">
+<tr><td style="text-align: justify; padding: 0px 10px 10px 0px;">
+<p>Esta actividad de aprendizaje se desarrolla en tiempo diferido y permite el análisis e intercambio de opiniones en torno a los contenidos previamente revisados.
+<script type="text/javascript">/*<![CDATA[*/
+// BLOQUE: ActividadFinal
+var TareaURL      = "https://bb.up.edu.pe/webapps/assignment/uploadAssignment?course_id=@X@course.pk_string@X@&content_id=@X@content.id@X@&group_id=&mode=cpview";
+var TareaInicio   = new Date("2018-06-25 00:00:00");
+var TareaFin      = new Date("2018-06-28 23:59:59");
+var TareaCriterio = "https://es.calameo.com/read/xxx";
+var TareaArchivos = [
+]; // [Icono: Descargable , Videotutorial , VinculoExterno],[texto],[URL]
+// VARIABLES GENERALES
+var month = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"];
+var days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+document.write(" Inicia el <b>"+days[TareaInicio.getDay()]+" "+("0"+TareaInicio.getDate()).slice(-2)+" de "+month[TareaInicio.getMonth()]+" del "+TareaInicio.getFullYear()+" a las "+("0"+TareaInicio.getHours()).slice(-2)+":"+("0"+TareaInicio.getMinutes()).slice(-2)+" horas </b> y concluye el <b><u>"+days[TareaFin.getDay()]+" "+("0"+TareaFin.getDate()).slice(-2)+" a las "+("0"+TareaFin.getHours()).slice(-2)+":"+("0"+TareaFin.getMinutes()).slice(-2)+" horas</u></b>.");
+/*]]>*/</script>
+Al final de la actividad habrás integrado tus aprendizajes en tu contexto profesional.</p>
+<div style="width:650px; margin:0px auto;">
+<div id="Tarea_criterio"></div>
+<div id="Tarea_boton"></div>
+</div>
+
+<script type="text/javascript">/*<![CDATA[*/
+if (TareaCriterio != "") 
+	document.getElementById("Tarea_criterio").innerHTML = "<a href=\""+TareaCriterio+"\" target=\"_blank\" style=\"width:250px; position:relative; float:left; display:block; border:1px solid #2C607D; -webkit-border-radius:3px; border-radius:5px; text-align:center; color:#FFFFFF; margin:5px; background:#014e6a url(https://sites.google.com/a/up.edu.pe/blended/mba/boton-criterios.png) no-repeat right center; text-decoration:none; padding:10px 46px 10px 10px; \">REVISA LOS CRITERIOS DE EVALUACIÓN</a>";	
+
+var e = setInterval(function() {
+	var now = new Date().getTime();
+	var TareadistanceI = TareaInicio - now ;
+	var TareadistanceF = TareaFin - now ;
+	if (TareadistanceI > 0) {
+		var Tareadays    = Math.floor(TareadistanceI / (1000 * 60 * 60 * 24));
+		var Tareahours   = Math.floor((TareadistanceI % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var Tareaminutes = Math.floor((TareadistanceI % (1000 * 60 * 60)) / (1000 * 60));
+		var Tareaseconds = Math.floor((TareadistanceI % (1000 * 60)) / 1000);
+		document.getElementById("Tarea_boton").innerHTML = "<p style=\"width:300px; position:relative; float:right; display:block; border:1px solid #2C607D; -webkit-border-radius:3px; border-radius:5px; text-align:center; color: #2C607D; padding:5px; margin:5px; line-height: 1;\"> <span style=\"font-size: 11px;\">Para iniciar la actividad faltan:</span> <br> <span style=\"font-size: 13px; font-weight: bold;\">"+ Tareadays + " días " + Tareahours + " horas " + Tareaminutes + " minutos " + Tareaseconds + " segundos </span></p>";
+	}else{
+	if (TareadistanceF > 0) {
+		document.getElementById("Tarea_boton").innerHTML = "<a href=\""+TareaURL+"\" target=\"_blank\" style=\"width:300px; position:relative; float:right; display:block; border:1px solid #2C607D; -webkit-border-radius:3px; border-radius:5px; text-align:center; color: #2C607D; padding:5px; margin:5px; line-height: 1; text-decoration:none; background:url(https://sites.google.com/a/up.edu.pe/blended/mba/icono-boton25px.png) no-repeat right center;\"><span style=\"font-size:11px;\">El actividad ha iniciado.</span><br><span style=\"font-size: 13px; font-weight: bold;\">INGRESA DESDE AQUÍ</span></a>";			  	
+	}else{
+		clearInterval(e);
+		document.getElementById("Tarea_boton").innerHTML = "<a href=\""+TareaURL+"\" target=\"_blank\" style=\"width:300px; position:relative; float:right; display:block; border:1px solid #2C607D; -webkit-border-radius:3px; border-radius:5px; text-align:center; color: #2C607D; padding:5px; margin:5px; line-height:1; text-decoration:none;\"><span style=\"font-size:11px;\">El tiempo de participación ha expirado</span><br><span style=\"font-size:13px; font-weight:bold;\">TE INVITAMOS A REVISAR LOS APUNTES</span></a>";		
+	}}
+}, 1000);
+/*]]>*/</script>
+<div style="clear: both;"></div>
+<div id="archivos"></div>
+<script type="text/javascript">/*<![CDATA[*/
+var msg = url = "";	
+if( TareaArchivos.length >0 ){
+msg += "<p style=\"font-size:12px; margin:0px; padding:10px 0px;\">Antes de iniciar, debes <b>revisar</b> los siguientes enlaces:</p>";
+// [Icono: Descargable , Videotutorial , VinculoExterno],[texto],[URL]
+for (var i = 0; i < TareaArchivos.length; i++) {
+if (TareaArchivos[i][2] != "" ){
+	if( TareaArchivos[i][0] == "Videotutorial") url = "https://www.youtube.com/embed/"+TareaArchivos[i][2].substring(17,TareaArchivos[i][2].length)+"?enablejsapi=1&rel=0&showinfo=0&autoplay=1";
+	else 
+	if (TareaArchivos[i][0] == "Descargable") url = TareaArchivos[i][2]; //"https://bb.up.edu.pe/bbcswebdav/courses/@X@course.id@X@/"
+	else
+	url = TareaArchivos[i][2];
+}
+if (url != "" )	msg += "<a href=\""+url+"\" target=\"_blank\" style=\"";
+else 			msg += "<div title=\"Documento entregado en versión físico.\" style=\"cursor:context-menu; ";
+msg += "color: #000; display: block; text-decoration: none; background: url(https://sites.google.com/a/up.edu.pe/blended/mba/boton-"+TareaArchivos[i][0]+".jpg) #edeef0 no-repeat center left; margin: 3px 10px; padding: 13px 5px 13px 60px; \">"+TareaArchivos[i][1];
+if (url != "" )	msg += "</a>"; 
+else 			msg += "</div>";
+url = "";
+}} document.getElementById("archivos").innerHTML = msg;
+/*]]>*/</script>
+</td>
+<td align="center" valign="middle" style="background: #edeef0; min-width: 100px;"><img src="https://sites.google.com/a/up.edu.pe/blended/mba/icono-tarea.png" /></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">/*<![CDATA[*/
+// INFORMACION
+var semana = "2";
+var codigoInterno = "1-2-mod";
+var titulo = "Modelos en Excel - Parte II";
+var VideoBienvenida = "https://youtu.be/wrRUo-JMTbI";
+var logro = "";
+// VARIABLES GENERALES
+var month = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"];
+var days = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+
+// TALLER
+var TallerAulaVirtual = "blended-mba34";
+var TallerURLGrabacion = "";
+var TallerURLCriterio = "https://es.calameo.com/read/00466297191ad66fde854";
+var TallerFechaInicio = new Date("2018-07-02 21:00:00");
+var TallerFechaFin = new Date("2018-07-02 22:30:00");
+var TallerFechaVideo = new Date("2018-07-03 11:59:59");
+var TallerArchivos = [
+["VinculoExterno","Lafosse, W (2018). Modelos en Excel - Parte II [diapositiva en Power Point].","https://es.calameo.com/read/0046629713e8d7d76507e"]
+,["Descargable","Lafosse, W. (2017) Caso 1: SIMA Perú.","1.2.MOD_S2-caso01_sima_peru.xlsx"]
+,["Descargable","Lafosse, W. (2017) Caso 2: SIMA Chimbote","1.2.MOD_S2-caso02_sima_chimbote.xlsx"]
+,["Descargable","Lafosse, W. (2017) Caso 3: Garantía de Llantas","1.2.MOD_S2-caso03_garantia_llantas.xlsx"]
+
+
+
+
+
+];
+
+// REFLEXION INDIVIDUAL
+var reflexionObligatoria = [
+["Videotutorial","Tutorial 1 (Video) - Medidas de tendencia central","https://youtu.be/80hBZMF1EQE"]
+,["Descargable","Tutorial 1 (Excel) - Medidas de tendencia central","1.2.MOD_S2-tutorial1.xlsx"]
+,["Videotutorial","Tutorial 2 (Video) - Medidas de dispersión","https://youtu.be/pFlHZpnDW28"]
+,["Descargable","Tutorial 2 (Excel) - Medidas de dispersión","1.2.MOD_S2-tutorial2.xlsx"]
+,["Videotutorial","Tutorial 3 (Video) - Frecuencia acumulada y obtención de gráficos.","https://youtu.be/FvygP3UcO4g"]
+,["Descargable","Tutorial 3 (Excel) - Distribución de frecuencia y obtención de gráficos.","1.2.MOD_S2-tutorial3.xlsx"]
+,["Videotutorial","Tutorial 4 (Video) - Medidas de tendencia central, distribución de frecuencias y gráfico.","https://youtu.be/XN-t5BFtC1U"]
+,["Descargable","Tutorial 4 (Excel) - Medidas de tendencia central, distribución de frecuencias y gráfico.","1.2.MOD_S2-tutorial4.xlsx"]
+,["Videotutorial","Tutorial 5 (Video) - Probabilidad marginal","https://youtu.be/0s5Oo8qL7X4"]
+,["Descargable","Tutorial 5 (Excel) - Probabilidad marginal","1.2.MOD_S2-tutorial5.xlsx"]
+];
+var reflexionOpcional = [
+["VinculoExterno","Anderson, D., Sweeney, D., Williams, T. (2011). Métodos cuantitativos para los negocios. Capítulo 3:Distribuciones de probabilidad. Undécima edición. México D.F.: Cengage Learning Editores.","https://es.calameo.com/read/0046629719a9d6c7deb16"]
+
+
+
+
+
+
+
+
+];
+
+// FORO
+var ForoURLCriterio   = "";
+var ForoFechaInicio = new Date("2018-07-03 00:00:00");
+var ForoFechaFin= new Date("2018-07-06 23:59:59");
+var ForoArchivos = [
+["Descargable","Lafosse, W. (2017) adaptado de Anderson, D., Sweeney, D., Williams, T. (2011). Caso Speciality Toys Inc.","1.2.MOD_S2-caso04_specialty_toys_sin_resolver.xlsx"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+];
+
+// BIBLIOGRAFIA
+var bibliografia = [
+
+
+
+
+
+];
+/*]]>*/</script>
